@@ -8,7 +8,7 @@ const {
   MouseConstraint
 } = Matter;
 
-const width = 800;
+const width = 1265;
 const height = 600;
 
 const engine = Engine.create();
@@ -33,16 +33,16 @@ World.add(
 
 //Walls
 const walls = [
-  Bodies.rectangle(400, 0, 800, 40, { isStatic: true }),
-  Bodies.rectangle(400, 600, 800, 40, { isStatic: true }),
+  Bodies.rectangle(400, 0, 1700, 40, { isStatic: true }),
+  Bodies.rectangle(400, 600, 1700, 40, { isStatic: true }),
   Bodies.rectangle(0, 300, 40, 600, { isStatic: true }),
-  Bodies.rectangle(800, 300, 40, 600, { isStatic: true })
+  Bodies.rectangle(1265, 300, 40, 600, { isStatic: true })
 ];
 World.add(world, walls);
 
 //Random Shapes
 
-for (let i = 0; i < 40; i++) {
+for (let i = 0; i < 60; i++) {
   if (Math.random() > 0.5) {
     World.add(
       world,
